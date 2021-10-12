@@ -1,6 +1,6 @@
 <?php
 
-    class baseDatos{
+    class BaseDatos{
         //ATRIBUTOS=VARIABLES=DATOS
         public $usuario="root";
         public $passwordBD="";

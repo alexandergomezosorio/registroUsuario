@@ -30,20 +30,58 @@
         }
         //create read update delete
         public function buscar(){
-            $consultarSQL="select * from empleados";
+            $consultaSQL="SELECT * FROM empleados";
 
-            return $consultarSQL;
-        }
-        public function eliminar($id){
-            $consultarSQL= "DELETE FROM empleados WHERE id='$id'";
-            return $consultarSQL;
-        }
-        public function editar($id){
-            $consultaSQL="UPDATE empleados SET edad='$this->edad',descripcion='$this->descripcion',foto='$this->foto' WHERE id='$id'";
             return $consultaSQL;
         }
+        public function eliminar($id){
+            $consultaSQL= "DELETE FROM empleados WHERE id='$id'";
 
-   
+            return $consultaSQL;
+        }
+        public function editar($id){
+            $consultaSQL="UPDATE empleados SET edad ='$this->edad',descripcion ='$this->descripcion',foto='$this->foto' WHERE id='$id'";
+
+            return $consultaSQL;
+        }
     }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
 ?>
