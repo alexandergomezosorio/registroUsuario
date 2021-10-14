@@ -3,7 +3,7 @@
     class Empleado{
 
         //VARIABLES=DATOS=ATRIBUTOS
-       public  $nombre;
+       public  $nombres;
        public  $apellidos;
        public  $email;
        public  $edad;
@@ -22,13 +22,15 @@
 
         //ACCIONES=FUNCIONES=METODOS
 
+        //CRUD=create read update delete
+        
         public function registrar(){
             $consultaSQL= "INSERT INTO empleados( nombres, apellidos, email, edad, descripcion, foto)
              VALUES ('$this->nombres','$this->apellidos','$this->email','$this->edad','$this->descripcion','$this->foto')";
 
-             return $consultaSQL;
+            return $consultaSQL;
         }
-        //create read update delete
+
         public function buscar(){
             $consultaSQL="SELECT * FROM empleados";
 

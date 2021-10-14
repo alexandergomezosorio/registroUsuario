@@ -24,7 +24,7 @@
                             <a class="nav-link active" aria-current="page" href="../index.php">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./registroProductos.php">Registro productos</a>
+                            <a class="nav-link" href="./registroUsuario.php">Registro usuarios</a>
                         </li>
                     </ul>
                     <form class="d-flex">
@@ -38,25 +38,25 @@
     </header>
     <main>
         <div class="container">
-
             <div class="row d-flex justify-content-center">
                 <div class="col-6">
+
                     <form class="formulario" action="../controllers/empleadosControlador.php" method="POST">
-                        <h4>Registro usuarios</h4>
+                        <h4>Registro productos</h4>
                         <div class="mb-3">
-                            <label class="form-label">Nombres</label>
+                            <label class="form-label">Nombre</label>
                             <input type="text" class="form-control" placeholder="Digite su nombre " name="nombres">
                         </div>
                         <div class="mb-3">
-                            <label class="form-label">Apellidos</label>
+                            <label class="form-label">Precio</label>
                             <input type="text" class="form-control" placeholder="Digite sus apellidos " name="apellidos">
                         </div>
                         <div class="mb-3">
-                            <label class="form-label">Email</label>
+                            <label class="form-label">Categoria</label>
                             <input type="email" class="form-control" placeholder="Digite su email " name="email">
                         </div>
                         <div class="mb-3">
-                            <label class="form-label">Edad</label>
+                            <label class="form-label">Cantidad</label>
                             <input type="number" class="form-control" placeholder="Digite su edad" name="edad">
                         </div>
                         <div class="mb-3">

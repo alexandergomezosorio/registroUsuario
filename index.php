@@ -24,7 +24,10 @@
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                                     <li class="nav-item">
-                                        <a class="nav-link" href="views/registroUsuario.php">Registro</a>
+                                        <a class="nav-link" href="views/registroUsuario.php">Registro usuarios</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="views/registroProductos.php">Registro productos</a>
                                     </li>
                                 </ul>
                                 <form class="d-flex">
