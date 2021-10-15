@@ -45,27 +45,23 @@
                         <h4>Registro productos</h4>
                         <div class="mb-3">
                             <label class="form-label">Nombre</label>
-                            <input type="text" class="form-control" placeholder="Digite su nombre " name="nombres">
+                            <input type="text" class="form-control" placeholder="Digite su nombre " name="nombre">
                         </div>
                         <div class="mb-3">
                             <label class="form-label">Precio</label>
-                            <input type="text" class="form-control" placeholder="Digite sus apellidos " name="apellidos">
+                            <input type="text" class="form-control" placeholder="Digite sus apellidos " name="precio">
                         </div>
                         <div class="mb-3">
                             <label class="form-label">Categoria</label>
-                            <input type="email" class="form-control" placeholder="Digite su email " name="email">
+                            <input type="email" class="form-control" placeholder="Digite su email " name="categoria">
                         </div>
                         <div class="mb-3">
                             <label class="form-label">Cantidad</label>
-                            <input type="number" class="form-control" placeholder="Digite su edad" name="edad">
+                            <input type="number" class="form-control" placeholder="Digite su edad" name="cantidad">
                         </div>
                         <div class="mb-3">
                             <label class="form-label">Foto</label>
                             <input type="text" class="form-control" placeholder="Suba su foto" name="foto">
-                        </div>
-                        <div class="mb-3">
-                            <label class="form-label">Descripcion</label>
-                            <textarea class="form-control" placeholder="Deja tus comentarios aca" name="descripcion"></textarea>
                         </div>
 
                         <button class="btn btn-primary" name="boton" type="submit">Enviar</button>
