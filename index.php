@@ -67,7 +67,7 @@
     <main>
         <div class="container ">
             <div class="row d-flex justify-content-center">
-                <div class="targetas col-10">
+                <div class="targetas col md-4">
                     <div class="card" style="width: 18rem;">
                         <img src="public/img/fotocelular.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -75,6 +75,8 @@
                             <a href="#" class="btn btn-primary">Comprar ya</a>
                         </div>
                     </div>
+                </div>
+                <div class="targetas col md-4">
                     <div class="card" style="width: 18rem;">
                         <img src="public/img/fotoplay5.webp" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -82,6 +84,8 @@
                             <a href="#" class="btn btn-primary">Comprar ya</a>
                         </div>
                     </div>
+                </div>
+                <div class="targetas col md-4">
                     <div class="card" style="width: 18rem;">
                         <img src="public/img/fotopatineta.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
@@ -89,15 +93,9 @@
                             <a href="#" class="btn btn-primary">Comprar ya</a>
                         </div>
                     </div>
-                    <div class="card" style="width: 18rem;">
-                        <img src="public/img/fotofreidora.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <p class="card-text">Freidora</p>
-                            <a href="#" class="btn btn-primary">Comprar ya</a>
-                        </div>
-                    </div>
                 </div>
             </div>
+        </div>
         </div>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>

@@ -45,23 +45,23 @@
                         <h4>Registro productos</h4>
                         <div class="mb-3">
                             <label class="form-label">Nombre</label>
-                            <input type="text" class="form-control" placeholder="Digite su nombre " name="nombre">
+                            <input type="text" class="form-control" placeholder="Digite nombre del producto " name="nombre">
                         </div>
                         <div class="mb-3">
                             <label class="form-label">Precio</label>
-                            <input type="text" class="form-control" placeholder="Digite sus apellidos " name="precio">
+                            <input type="text" class="form-control" placeholder="Digite el precio " name="precio">
                         </div>
                         <div class="mb-3">
                             <label class="form-label">Categoria</label>
-                            <input type="email" class="form-control" placeholder="Digite su email " name="categoria">
+                            <input type="email" class="form-control" placeholder="Digite la categoria " name="categoria">
                         </div>
                         <div class="mb-3">
                             <label class="form-label">Cantidad</label>
-                            <input type="number" class="form-control" placeholder="Digite su edad" name="cantidad">
+                            <input type="number" class="form-control" placeholder="Digite la cantidad" name="cantidad">
                         </div>
                         <div class="mb-3">
                             <label class="form-label">Foto</label>
-                            <input type="text" class="form-control" placeholder="Suba su foto" name="foto">
+                            <input type="text" class="form-control" placeholder="Suba foto" name="foto">
                         </div>
 
                         <button class="btn btn-primary" name="boton" type="submit">Enviar</button>

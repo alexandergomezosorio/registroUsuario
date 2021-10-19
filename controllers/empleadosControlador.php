@@ -26,7 +26,7 @@ include("../views/registroUsuario.php");
         header("Location:../views/registroUsuario.php");
         
     }else
-    echo("ERROR tenemos para registrar tus datos");
+    echo("ERROR para registrar tus datos");
 
 } else {
     echo ("no deberias estar aquí");
