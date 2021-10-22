@@ -1,3 +1,10 @@
+<?php
+
+ if (!isset($_SESSION)) {
+     session_start();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -69,13 +76,14 @@
 
                         <button class="btn btn-primary" name="boton" type="submit">Enviar</button>
                     </form>
+                    <a href="../views/listaEmpleado.php">ver lista empleado</a>
                 </div>
             </div>
         </div>
     </main>
     
      <section>
-        <?php ?>
+        <?php if(isset($_SESSION['mensaje'])):?>
         <div class="modal fade" id="modal" tabindex="-1">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -84,12 +92,13 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body text-dark">
-                        <h5>PRUEBA</h5>
+                        <h5><?php echo($_SESSION['mensaje'])?></h5>
                     </div>
                 </div>
             </div>
         </div>
-        <?php ?>
+        <?php unset($_SESSION['mensaje'])?>
+        <?php  endif?>
     </section>
     <script type="module" src="../public/js/lanzarmodal.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>

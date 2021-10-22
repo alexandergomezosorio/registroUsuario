@@ -1,4 +1,11 @@
 <?php
+
+if(!isset($_SESSION)){
+    session_start();
+
+}
+
+
 // 1 1incluir el modelo de la BD
 // 2 incluir modelo empleado
 include("../models/baseDatos.php");
@@ -22,7 +29,9 @@ include("../views/registroUsuario.php");
     $resultado=$baseDatos->insertarRegistro($empleado->registrar());
 
     if($resultado){
-        echo(" exito en el registro");
+        
+        $_SESSION['mensaje']="exito en el registro";
+
         header("Location:../views/registroUsuario.php");
         
     }else

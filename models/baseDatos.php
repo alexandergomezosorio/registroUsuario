@@ -41,6 +41,26 @@
                 die("Tenemos un problema " . $error->getMessage());
         }
       }
+         public function buscarRegistros($consultaSQL){
+            try {
+                $conexion = $this->conectarConBD();
+
+                //2 preparar la BD que recibir consulta
+                $operacion = $conexion->prepare($consultaSQL);
+
+                //3. establecer el formato de los datos consultados
+                $operacion->setFetchMode(PDO::FETCH_ASSOC);
+
+                //4ejecutar la operacion
+                $operacion->execute();
+
+                return $operacion->fetchAll();
+
+            } catch (PDOException $error) {
+                die("Tenemos un problema " . $error->getMessage());
+            }
+
+         }
         
     }
 
