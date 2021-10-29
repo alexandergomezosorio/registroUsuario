@@ -2,15 +2,12 @@
 
 if(!isset($_SESSION)){
     session_start();
-
 }
-
-
 // 1 1incluir el modelo de la BD
 // 2 incluir modelo empleado
 include("../models/baseDatos.php");
 include("../models/Empleado.php");
-include("../views/registroUsuario.php");
+
 
 
     if(isset($_POST["boton"])){

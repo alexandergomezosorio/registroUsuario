@@ -17,7 +17,7 @@
             try{
                 $datosGeneralesBD=$this->servidorBD.$this->nombreBD;
                 $conexion=new PDO($datosGeneralesBD,$this->usuario.$this->passwordBD);
-                echo("exito de conexion con BD");
+                 //echo("exito de conexion con BD");
                 return $conexion;
 
             }catch(PDOException $error){
