@@ -31,7 +31,7 @@ include("../controllers/controladorListadoEmpleado.php");
                                 <h5 class="card-title"><?php echo ($empleado["nombres"]) ?></h5>
                                 <p class="card-text"><?php echo ($empleado["descripcion"]) ?></p>
                                 <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#confirmacion<?= $empleado["id"] ?>"><i class="fas fa-trash-alt"></i></a>
-                                <a href="#" class="btn btn-primary"><i class="fas fa-pencil-alt"></i></a>
+                                <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#editar<?= $empleado["id"] ?>"><i class="fas fa-pencil-alt"></i></a>
                             </div>
                         </div>
 
@@ -50,6 +50,34 @@ include("../controllers/controladorListadoEmpleado.php");
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                                             <a href="../controllers/controladorEliminarEmpleado.php?id=<?= $empleado["id"] ?>" class="btn btn-danger">Aceptar</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section>
+                            <div class="modal fade" id="editar<?= $empleado["id"] ?>" tabindex="-1">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header bg-primary text-white">
+                                            <h5 class="modal-title">Tiendita del horror</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="row">
+                                                <div class="col-3">
+                                                    <img src="<?= $empleado["foto"] ?>" alt="foto" class="img-fluid w-100">
+                                                </div>
+                                                <div class="col-9">
+                                                    <form action="../controllers/controladorEditarEmpleado.php?id=<?=$empleado["id"]?>" method="POST">
+                                                        <div class="mb-3">
+                                                            <label class="form-label">Email</label>
+                                                            <input name="email" type="text" class="form-control" value="<?= $empleado["email"] ?>">
+                                                        </div>
+                                                        <button type="submit" class="btn btn-primary"name="botonEditar">Editar</button>
+                                                    </form>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

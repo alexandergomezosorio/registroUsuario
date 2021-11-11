@@ -34,9 +34,7 @@ include("../models/Empleado.php");
     }else
     echo("ERROR para registrar tus datos");
 
-} else {
-    echo ("no deberias estar aquí");
-}
+} 
    
     
 

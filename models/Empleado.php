@@ -30,7 +30,6 @@
 
             return $consultaSQL;
         }
-
         public function buscar(){
             $consultaSQL="SELECT * FROM empleados";
 
@@ -42,7 +41,7 @@
             return $consultaSQL;
         }
         public function editar($id){
-            $consultaSQL="UPDATE empleados SET edad ='$this->edad',descripcion ='$this->descripcion',foto='$this->foto' WHERE id='$id'";
+            $consultaSQL="UPDATE empleados SET email ='$this->email' WHERE id='$id'";
 
             return $consultaSQL;
         }
